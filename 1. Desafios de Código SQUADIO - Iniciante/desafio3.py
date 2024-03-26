@@ -28,22 +28,13 @@ Saída:
 120
 
 '''
-capacidade_atual, aumento_percentual = map(int, input().split()) 
-# capacidade atual total em teraflops e o aumento percentual (separados por espaço)
-# map é uma função que aplica uma função a todos os itens de uma entrada iterável.
-# input().split() é uma função que divide a entrada em partes, separadas por espaço
-# então map(int, input().split()) significa que a entrada é separada por espaço e convertida para inteiros
-# capacidade_atual = primeiro valor da entrada
-# aumento_percentual = segundo valor da entrada
 
-# TODO: Calcule a nova capacidade do disco de Mithril
-# TODO: Imprima a nova capacidade
+capacidade_atual, aumento_percentual = map(int, input().split())
 
-# Cálculo do aumento em teraflops
-aumento_teraflops = capacidade_atual * aumento_percentual / 100 # Cálculo do aumento em teraflops
+# // TODO: Calcule a nova capacidade do disco de Mithril
 
-# Cálculo da nova capacidade total
-nova_capacidade = capacidade_atual + aumento_teraflops # Cálculo da nova capacidade total
+nova_capacidade_total = capacidade_atual * (1 + (aumento_percentual / 100))
 
-# Impressão da nova capacidade
-print(int(nova_capacidade)) # Impressão da nova capacidade total em teraflops (convertida para inteiro)
+#// TODO: Imprima a nova capacidade
+
+print(int(nova_capacidade_total))
