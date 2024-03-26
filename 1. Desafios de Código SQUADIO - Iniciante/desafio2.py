@@ -40,15 +40,16 @@ Lista de itens:
 '''
 
 # Lista para armazenar os itens
-itens = [] # Cria uma lista vazia para armazenar os itens
+itens = []
 
-#TODO: Solicite os itens ao usuário
-itens.append(input()) # Adiciona o primeiro item à lista
-itens.append(input()) # Adiciona o segundo item à lista
-itens.append(input()) # Adiciona o terceiro item à lista
+# solicita o item ao usuário
+for item in range(3):
+    item = input()
+    itens.append(item)
+
 
 # Exibe a lista de itens
-print("Lista de itens:") # Imprime a mensagem "Lista de itens:"
-for item in itens: # Loop for para imprimir a lista de itens que o personagem possui 
-    print(f"- {item}") # Imprime a lista de itens 
+print("Lista de itens:")
+for item in itens:
+    print(f"- {item}")
 
