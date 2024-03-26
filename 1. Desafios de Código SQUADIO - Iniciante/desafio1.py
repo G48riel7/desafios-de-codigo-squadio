@@ -37,20 +37,19 @@ Explorador: 2 passos
 Explorador: 3 passos
 '''
 
-# TODO: Adicione uma condição para verificar se a quantidade de passos é positiva.
-# Se a quantidade de passos for zero, imprima "Nenhum passo dado na floresta."
-# Caso contrário, utilize um loop for para imprimir a mensagem do explorador, indicando o número do passo.
+# Desafio: A Aventura do Explorador
 
-# SOLUÇÃO e EXPLICAÇÃO:
-quantidade_passos = int(input()) # quantidade de passos que o explorador deu na floresta 
+# Entrada
+quantidade_passos = int(input())
 
-if quantidade_passos <= 0: # Verifica se a quantidade de passos é positiva
-    print("Nenhum passo dado na floresta.") # Imprime a mensagem caso a quantidade de passos seja zero
-else:
-    # Loop for para imprimir a mensagem do explorador
-    for passo in range(1, quantidade_passos + 1): # Loop for para imprimir a mensagem do explorador indicando o número do passo
-      if passo == 1: # Verifica se o número do passo é igual a 1
-        print(f"Explorador: {passo} passo") # Imprime a mensagem do explorador indicando o número do passo
-      else: # Caso contrário
-        print(f"Explorador: {passo} passos") # Imprime a mensagem do explorador indicando os número dos passos (no plural)
-
+# //TODO: Adicione uma condição para verificar se a quantidade de passos é positiva.
+# // Se a quantidade de passos for zero, imprima "Nenhum passo dado na floresta."
+# // Caso contrário, utilize um loop for para imprimir a mensagem do explorador, indicando o número do passo.
+if quantidade_passos > 0:
+    for passo in range(1, (quantidade_passos+1)):
+        if passo == 1:
+            print(f"Explorador: {passo} passo")
+        else:
+            print(f"Explorador: {passo} passos ")
+elif quantidade_passos == 0:
+    print("Nenhum passo dado na floresta.")
