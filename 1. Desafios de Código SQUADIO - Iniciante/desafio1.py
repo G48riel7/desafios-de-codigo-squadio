@@ -51,5 +51,5 @@ if quantidade_passos > 0:
             print(f"Explorador: {passo} passo")
         else:
             print(f"Explorador: {passo} passos ")
-elif quantidade_passos == 0:
+if quantidade_passos == 0:
     print("Nenhum passo dado na floresta.")
